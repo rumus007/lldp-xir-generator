@@ -1,8 +1,9 @@
 package main
 
 import (
-	mergelab "github.com/rumus007/lldp-xir-generator"
+	facility "github.com/rumus007/lldp-xir-generator"
+	"gitlab.com/mergetb/xir/v0.3/go/build"
 )
 func main() {
-	mergelab.CreateFacility()
+	build.Run(facility.CreateFacility())
 }
